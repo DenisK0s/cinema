@@ -1,0 +1,311 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"); */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(98, 20, 2, 1);
+
+  font-family: "Roboto", sans-serif;
+
+  color: #fff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url(./images/bg.jpg) no-repeat center top / cover;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.nav-menu {
+  display: flex;
+  margin-left: 57px;
+}
+
+.nav-menu-item {
+  margin-right: 25px;
+}
+
+.nav-menu-link {
+  color: #fff;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  color: #fff;
+}
+
+.user-avatar {
+  width: 33px;
+  height: 33px;
+
+  padding: 5px;
+
+  margin-left: 11px;
+
+  border-radius: 50%;
+
+  background-color: rgba(117, 114, 114, 0.367);
+  box-shadow: 0 0 4px 1px white;
+}
+
+.film {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  color: #fff;
+}
+
+.film-title-small {
+  opacity: 0.5;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.film-title {
+  margin-top: 11px;
+  margin-bottom: 23px;
+
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.film-description {
+  max-width: 570px;
+
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.film-trailer {
+  margin: auto;
+}
+
+.film-details {
+  display: flex;
+  align-items: center;
+
+  margin-top: 50px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+}
+
+.time-icon {
+  margin-right: 14px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-left: 34px;
+}
+
+.rating-icon {
+  margin-right: 14px;
+}
+
+.rating-current {
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.session {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-top: 62px;
+  padding-top: 46px;
+  padding-bottom: 63px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.session-label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.session-date-block {
+  display: flex;
+}
+
+.session-date-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+  margin-right: 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  transition: 200ms;
+}
+
+.session-date-item:hover,
+.session-date-item:focus {
+  background-color: rgba(254, 142, 5, 1);
+  color: #621402;
+}
+
+.session-month {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.session-date {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.session-weekday {
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.select {
+  margin-top: 15px;
+  padding: 18px;
+
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.select option {
+  color: #621402;
+}
+
+.select option:last-child {
+  border: none;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.select-cinema {
+  min-width: 470px;
+}
+
+.scheme {
+  margin-bottom: 40px;
+  background: rgba(36, 36, 36, 0.18);
+  border-radius: 10px;
+}
+
+.scheme path:not(.light) {
+  fill: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.scheme path:not(.light):hover {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.scheme path.booked,
+.scheme path.booked:hover {
+  fill: rgba(255, 255, 255, 0.05);
+  cursor: not-allowed;
+}
+
+.scheme path.active,
+.scheme path.active:hover {
+  fill: #fe8e05;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+
+  max-width: 1024px;
+  margin: auto;
+  padding-top: 22px;
+  padding-bottom: 38px;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.legend svg {
+  margin-right: 15px;
+}
+
+.legend-label {
+  display: flex;
+  align-items: center;
+
+  margin-right: 30px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 0 40px 0;
+}
+
+.price-label {
+  display: block;
+
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.price-tag {
+  font-size: 52px;
+  line-height: 61px;
+}
+
+.button {
+  display: block;
+  padding: 24px 52px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+
+  text-decoration: none;
+
+  background-color: #fe8e05;
+  border-radius: 5px;
+}
